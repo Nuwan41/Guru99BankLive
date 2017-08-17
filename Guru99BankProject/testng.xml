@@ -4,6 +4,7 @@
   <test name="Test">
     <classes>
       <class name="guru99bankpackage.Guru99TestCases"/>
+      <class name="Guru99BankProject.Guru99BankProject.AppTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

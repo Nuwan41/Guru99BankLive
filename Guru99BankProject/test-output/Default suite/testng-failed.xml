@@ -5,9 +5,9 @@
     <classes>
       <class name="guru99bankpackage.Guru99TestCases">
         <methods>
-          <include name="TestCase2"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
+          <include name="TestCase1"/>
         </methods>
       </class> <!-- guru99bankpackage.Guru99TestCases -->
     </classes>

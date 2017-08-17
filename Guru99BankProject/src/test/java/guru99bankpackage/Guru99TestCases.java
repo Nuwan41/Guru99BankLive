@@ -7,12 +7,14 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
+import org.apache.log4j.TTCCLayout;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import pageobjects.Guru99BankLogInPage;
+import pageobjects.Managerhomepage;
 import utility.Constants;
 
 
@@ -25,6 +27,7 @@ public class Guru99TestCases {
   }
   @Test
   public void TestCase1() {
+	  
 	  	System.setProperty("webdriver.gecko.driver", Constants.geckoDriverPath);
 		  driver=new FirefoxDriver();
 		  
@@ -39,6 +42,10 @@ public class Guru99TestCases {
 		  Guru99BankLogInPage.txtPassword(driver).sendKeys("epemygy");
 		  Guru99BankLogInPage.btnLogin(driver).click();
 		  
+		  String ExpectedTitle="Welcome To Manager's Page of Guru99 Bank";
+		  String ActualTitle=Managerhomepage.TtlWelcomeManagerPage(driver).getText();	
+		  System.out.println(ActualTitle);
+		  //Assert.assertTrue(ActualTitle.equals(ExpectedTitle));
 		  driver.quit();
   }
   @Test
