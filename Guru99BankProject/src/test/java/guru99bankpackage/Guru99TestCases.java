@@ -1,6 +1,11 @@
 package guru99bankpackage;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+//import org.testng.asserts.SoftAssert;
+import com.google.common.base.Verify;
+
 import org.testng.annotations.BeforeTest;
 
 import static org.testng.Assert.assertEquals;
@@ -42,10 +47,14 @@ public class Guru99TestCases {
 		  Guru99BankLogInPage.txtPassword(driver).sendKeys("epemygy");
 		  Guru99BankLogInPage.btnLogin(driver).click();
 		  
-		  String ExpectedTitle="Welcome To Manager's Page of Guru99 Bank";
-		  String ActualTitle=Managerhomepage.TtlWelcomeManagerPage(driver).getText();	
+		  String ExpectedTitle="Guru99 Bank Home Page";
+		  //String ActualTitle=Managerhomepage.TtlWelcomeManagerPage(driver).getText();	
+		  String ActualTitle= driver.getTitle();
 		  System.out.println(ActualTitle);
-		  //Assert.assertTrue(ActualTitle.equals(ExpectedTitle));
+		  
+		 Assert.assertTrue(ActualTitle.equals(ExpectedTitle));
+		  
+		  //Verify.verify(ActualTitle.equals(ExpectedTitle));
 		  driver.quit();
   }
   @Test
