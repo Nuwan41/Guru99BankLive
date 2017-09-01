@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7863" started-at="2017-08-22T19:22:54Z" finished-at="2017-08-22T19:23:02Z">
+  <suite name="Default suite" duration-ms="9167" started-at="2017-08-31T20:30:50Z" finished-at="2017-08-31T20:30:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7863" started-at="2017-08-22T19:22:54Z" finished-at="2017-08-22T19:23:02Z">
+    <test name="Default test" duration-ms="9167" started-at="2017-08-31T20:30:50Z" finished-at="2017-08-31T20:30:59Z">
       <class name="guru99bankpackage.Guru99TestCases">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99bankpackage.Guru99TestCases@7219ec67]" name="beforeTest" is-config="true" duration-ms="13" started-at="2017-08-22T14:22:54Z" finished-at="2017-08-22T14:22:54Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:guru99bankpackage.Guru99TestCases@7219ec67]" name="beforeTest" is-config="true" duration-ms="11" started-at="2017-08-31T15:30:50Z" finished-at="2017-08-31T15:30:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TestCase1()[pri:0, instance:guru99bankpackage.Guru99TestCases@7219ec67]" name="TestCase1" duration-ms="7787" started-at="2017-08-22T14:22:54Z" finished-at="2017-08-22T14:23:02Z">
+        <test-method status="PASS" signature="TestCase1()[pri:0, instance:guru99bankpackage.Guru99TestCases@7219ec67]" name="TestCase1" duration-ms="9110" started-at="2017-08-31T15:30:50Z" finished-at="2017-08-31T15:30:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase1 -->
-        <test-method status="PASS" signature="TestCase2()[pri:0, instance:guru99bankpackage.Guru99TestCases@7219ec67]" name="TestCase2" duration-ms="28" started-at="2017-08-22T14:23:02Z" finished-at="2017-08-22T14:23:02Z">
+        <test-method status="PASS" signature="TestCase2()[pri:0, instance:guru99bankpackage.Guru99TestCases@7219ec67]" name="TestCase2" duration-ms="2" started-at="2017-08-31T15:30:59Z" finished-at="2017-08-31T15:30:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestCase2 -->
-        <test-method status="PASS" signature="f()[pri:0, instance:guru99bankpackage.Guru99TestCases@7219ec67]" name="f" duration-ms="2" started-at="2017-08-22T14:23:02Z" finished-at="2017-08-22T14:23:02Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:guru99bankpackage.Guru99TestCases@7219ec67]" name="f" duration-ms="2" started-at="2017-08-31T15:30:59Z" finished-at="2017-08-31T15:30:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99bankpackage.Guru99TestCases@7219ec67]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-08-22T14:23:02Z" finished-at="2017-08-22T14:23:02Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:guru99bankpackage.Guru99TestCases@7219ec67]" name="afterTest" is-config="true" duration-ms="1" started-at="2017-08-31T15:30:59Z" finished-at="2017-08-31T15:30:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
