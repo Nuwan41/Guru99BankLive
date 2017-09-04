@@ -35,9 +35,12 @@ public class Guru99TestCases {
   }
   @Test
   public void TestCase1() {
-	  
+	  /*
 	  	System.setProperty("webdriver.gecko.driver", Constants.geckoDriverPath);
 		  driver=new FirefoxDriver();
+		  */
+		System.setProperty("webdriver.chrome.driver", Constants.chromeDriverPath);
+  		driver = new ChromeDriver();  		
 		  
 		  
 		  
@@ -45,15 +48,19 @@ public class Guru99TestCases {
 		  System.setProperty("webdriver.chrome.driver", Constants.chromeDriverPath);
 		  driver=new ChromeDriver();
 		  */
-	  
+		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  driver.get(Constants.url);
-		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		 
+		
+		 /*
 		  Guru99BankLogInPage.txtUserName(driver).sendKeys("mngr92205");
 		  Guru99BankLogInPage.txtPassword(driver).sendKeys("epemygy");
+		  */
+		  Guru99BankLogInPage.txtUserName(driver).sendKeys("mngr95874");
+		  Guru99BankLogInPage.txtPassword(driver).sendKeys("bEtEqYs");
 		  Guru99BankLogInPage.btnLogin(driver).click();
 		  
-		  String ExpectedTitle="Guru99 Bank Home Page";
+		  //String ExpectedTitle="Guru99 Bank Home Page";
+		  String ExpectedTitle="Guru99 Bank Manager HomePage";
 		  //String ActualTitle=Managerhomepage.TtlWelcomeManagerPage(driver).getText();	
 		  String ActualTitle= driver.getTitle();
 		  System.out.println(ActualTitle);
