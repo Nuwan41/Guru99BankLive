@@ -12,6 +12,8 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
+import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.TTCCLayout;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -37,12 +39,15 @@ public class Guru99TestCases {
 	  	System.setProperty("webdriver.gecko.driver", Constants.geckoDriverPath);
 		  driver=new FirefoxDriver();
 		  
+		  
+		  
 	  /*
 		  System.setProperty("webdriver.chrome.driver", Constants.chromeDriverPath);
 		  driver=new ChromeDriver();
 		  */
 	  
 		  driver.get(Constants.url);
+		 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		 
 		  Guru99BankLogInPage.txtUserName(driver).sendKeys("mngr92205");
 		  Guru99BankLogInPage.txtPassword(driver).sendKeys("epemygy");
