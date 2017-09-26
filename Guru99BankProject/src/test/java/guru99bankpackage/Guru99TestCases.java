@@ -68,7 +68,7 @@ public class Guru99TestCases {
 		 Assert.assertTrue(ActualTitle.equals(ExpectedTitle));
 		  
 		  //Verify.verify(ActualTitle.equals(ExpectedTitle));
-		  driver.quit();
+		  //driver.quit();
   }
   @Test
   public void TestCase2(){
