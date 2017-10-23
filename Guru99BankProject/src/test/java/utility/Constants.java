@@ -11,4 +11,7 @@ public static final String geckoDriverPath="C:\\Nuwan\\selenium\\GekoDriver 0.15
 
 //Chrome Driver Path
 public static final String chromeDriverPath="C:\\Nuwan\\Software\\Selinium\\Chromedriver\\v2.29\\chromedriver.exe";
+
+public static final String userName="mngr101752";
+public static final String passWord="gyretYt";
 }

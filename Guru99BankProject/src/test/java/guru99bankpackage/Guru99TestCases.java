@@ -39,24 +39,36 @@ public class Guru99TestCases {
 	  	System.setProperty("webdriver.gecko.driver", Constants.geckoDriverPath);
 		  driver=new FirefoxDriver();
 		  */
+	  	/* >>>>>>>>
 		System.setProperty("webdriver.chrome.driver", Constants.chromeDriverPath);
-  		driver = new ChromeDriver();  		
-		  
+  		driver = new ChromeDriver();  	
+  		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		 */ 
 		  
 		  
 	  /*
 		  System.setProperty("webdriver.chrome.driver", Constants.chromeDriverPath);
 		  driver=new ChromeDriver();
 		  */
-		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		  driver.get(Constants.url);
+		  //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		  //driver.get(Constants.url);
 		
 		 /*
 		  Guru99BankLogInPage.txtUserName(driver).sendKeys("mngr92205");
 		  Guru99BankLogInPage.txtPassword(driver).sendKeys("epemygy");
 		  */
+	  
+	  	WebDriver driver = null;
+	  	driver=appModules.LounchBrowser.LounchChrome(driver);
+	  	
+	  	
+	  	/*
 		  Guru99BankLogInPage.txtUserName(driver).sendKeys("mngr95874");
 		  Guru99BankLogInPage.txtPassword(driver).sendKeys("bEtEqYs");
+		  */
+		  Guru99BankLogInPage.txtUserName(driver).sendKeys(Constants.userName);
+		  Guru99BankLogInPage.txtPassword(driver).sendKeys(Constants.passWord);
+		  
 		  Guru99BankLogInPage.btnLogin(driver).click();
 		  
 		  //String ExpectedTitle="Guru99 Bank Home Page";
@@ -66,7 +78,8 @@ public class Guru99TestCases {
 		  System.out.println(ActualTitle);
 		  
 		 Assert.assertTrue(ActualTitle.equals(ExpectedTitle));
-		  
+		 System.out.println("Actual Title "+ActualTitle); 
+		 System.out.println("Expected Title "+ExpectedTitle); 
 		  //Verify.verify(ActualTitle.equals(ExpectedTitle));
 		  //driver.quit();
   }
